@@ -1,0 +1,265 @@
+body
+{
+    background: #323232;
+    color: #ddd;
+}
+
+a, a:visited
+{
+    color: #b21515;
+    font-weight: bold;
+}
+
+a:hover, a:active
+{
+    color: #d31313;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4
+{
+    color: #ddd;
+}
+
+h1.inverse, h2.inverse, h3.inverse, h4.inverse
+{
+    color: #323232;
+}
+
+#navbar
+{
+    transition-property: height, line-height, border-bottom, background-color;
+    transition-duration: 0.5s;
+    width: 100%;
+    border-bottom: 0;
+    height: 150px;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background: rgba(50, 50, 50, 0);
+    background: url("../images/bg_blurry2.jpg") fixed;
+    background-size: cover;
+    line-height: 150px;
+}
+
+#navbar ul
+{
+    float: right;
+    line-height: 150px;
+    transition-property: line-height;
+    transition-duration: 0.5s;
+}
+
+#navbar ul li
+{
+    display: inline;
+    list-style: none;
+    margin-right: 1.5em;
+}
+
+#navbar ul li:last-child
+{
+    margin-right: 0;
+}
+
+#navbar .nav-brand
+{
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+}
+
+#navbar.reduced
+{
+    height: 100px;
+    line-height: 100px;
+    border-bottom: 2px solid #444;
+    background: rgba(55, 55, 55, 1);
+}
+
+#navbar.reduced ul
+{
+    line-height: 100px;
+}
+
+#navbar.reduced .nav-brand
+{
+    opacity: 1;
+}
+
+section
+{
+    padding: 5em;
+}
+
+section#abstract
+{
+    padding-top: 200px;
+    background: url("../images/bg_blurry2.jpg") fixed;
+    background-size: cover;
+}
+
+section#abstract p
+{
+    margin-top: 5em;
+}
+
+section#abstract h1
+{
+    font-weight: bold;
+    font-size: 7em;
+    text-align: center;
+    text-shadow: 3px 4px 0px #ddd, 9px 12px 0px #888;
+}
+
+section#projects
+{
+    background: #ddd;
+    color: #323232;
+}
+
+section#curriculum
+{
+
+}
+
+section#misc
+{
+    background: #ddd;
+}
+
+section#contact
+{
+    background: url("../images/bg_blurry_contact.jpg") fixed;
+    background-size: cover;
+}
+
+footer
+{
+    background: #222;
+    padding: 5em;
+}
+
+footer ul
+{
+
+}
+
+footer ul li
+{
+    list-style: none;
+}
+
+.left-aligned
+{
+    text-align: left;
+}
+
+.right-aligned
+{
+    text-align: right;
+}
+
+.centered
+{
+    text-align: center;
+}
+
+.inverse
+{
+    color: #323232;
+}
+
+section#curriculum > div.container > div.row:first-of-type
+{
+    margin-bottom: 50px;
+}
+
+.timeline-wrapper
+{
+    width: 100%;
+    position: relative;
+    height: 100px;
+}
+
+.timeline
+{
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    width: 50%;
+    line-height: 100px;
+}
+
+.middle-wrapper
+{
+    width: 100%;
+    height: 100px;
+    display: table;
+    line-height: 120%;
+}
+
+.top-50
+{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.timeline span.big
+{
+    font-size: 1.3em;
+}
+
+.timeline span.small
+{
+
+}
+
+.overlay
+{
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    z-index: 2;
+    text-align: center;
+    color: #333;
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 100px;
+}
+
+.overlay span
+{
+    padding: 5px 10px;
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+.overlay-bottom
+{
+    background: url("../images/timeline-arrow-bottom.png") center bottom no-repeat;
+}
+
+.overlay-top
+{
+    background: url("../images/timeline-arrow-top.png") center top no-repeat;
+}
+
+.timeline-leftpart
+{
+    border-right: 10px solid #ccc;
+    left: 0;
+    right: 50%;
+    text-align: right;
+    padding-right: 75px;
+}
+
+.timeline-rightpart
+{
+    border-left: 10px solid #ccc;
+    left: 50%;
+    right: 100%;
+    text-align: left;
+    padding-left: 75px;
+}
