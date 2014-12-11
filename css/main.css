@@ -1,6 +1,6 @@
 body
 {
-    background: #323232;
+    background: #80592f;
     color: #ddd;
 }
 
@@ -83,6 +83,11 @@ h1.inverse, h2.inverse, h3.inverse, h4.inverse
     line-height: 100px;
 }
 
+#navbar.reduced a
+{
+    color: #ddd;
+}
+
 #navbar.reduced .nav-brand
 {
     opacity: 1;
@@ -149,6 +154,17 @@ footer ul
 footer ul li
 {
     list-style: none;
+}
+
+footer i
+{
+    font-size: 5em !important;
+}
+
+footer .row
+{
+    margin-top: 30px;
+    margin-bottom: 60px;
 }
 
 .left-aligned
