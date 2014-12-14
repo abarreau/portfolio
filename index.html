@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="css/bootstrap.css" media="screen" />
     <link rel="stylesheet" href="css/main.css" media="screen" />
     <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,700,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <title>Anthony Barreau</title>
 </head>
 <body>
@@ -22,7 +23,7 @@
     <section id="abstract">
         <div class="container">
             <h1 class="inverse">Anthony Barreau</h1>
-            <p class="centered inverse">I'm a software and web developer based in Montpellier, France.</p>
+            <p id="punchline" class="centered inverse">I'm a french software and web developer.</p>
             <p class="centered inverse">
                 <a href="mailto:barreau.anthony@gmail.com"><i class="fa fa-mail-forward"></i> barreau.anthony@gmail.com</a>
                 <span> &boxh; <a class="navbar-link" href="#more">Additional links</a></span>
@@ -32,17 +33,17 @@
 
     <section id="projects">
         <div class="container">
-            <h2 class="inverse">Works</h2>
+            <h2 class="inverse uppercased"><span class="emphased">Various</span> Works</h2>
         </div>
     </section>
 
     <section id="curriculum">
         <div class="container">
-            <h2>Curriculum Vitae</h2>
+            <h2 class="inverse uppercased"><span class="emphased">Curriculum</span> Vitae</h2>
 
             <div class="row">
                 <div class="col-sm-6 col-lg-4 col-xs-12">
-                    <h3 class="centered">Web</h3>
+                    <h3 class="centered inverse">Web</h3>
                     <ul>
                         <li>Programming languages : HTML5 <i class="fa fa-html5"></i> / CSS3 <i class="fa fa-css3"></i> / Less / PHP</li>
                         <li>Javascript frameworks (NodeJS, ExpressJS, BackboneJS, Underscore, jQuery, ...)</li>
@@ -50,7 +51,7 @@
                     </ul>
                 </div>
                 <div class="col-sm-6 col-lg-4 col-xs-12">
-                    <h3 class="centered">Software</h3>
+                    <h3 class="centered inverse">Software</h3>
                     <ul>
                         <li>Programming languages : C, C#, Java</li>
                         <li>Frameworks : Play!, Unity3D, Android <i class="fa fa-android"></i></li>
@@ -58,7 +59,7 @@
                     </ul>
                 </div>
                 <div class="col-sm-6 col-lg-4 col-xs-12">
-                    <h3 class="centered">Miscellaneous</h3>
+                    <h3 class="centered inverse">Miscellaneous</h3>
                     <ul>
                         <li>Relational and schema oriented databases</li>
                         <li>Design patterns, UML modeling</li>
@@ -176,39 +177,42 @@
 
     <footer id="more">
         <div class="container">
-            <h2>Additional informations</h2>
-            <ul>
-                <li>
+            <h2 class="uppercased"><span class="emphased">Additional</span> informations</h2>
+            <div class="row">
+                <div class="col-sm-4 centered">
                     <a href="https://github.com/xandar" target="_blank">
-                        <i class="fa fa-github"></i> Github
+                        <i class="fa fa-github"></i> <br />Github
                     </a>
-                </li>
-                <li>
+                </div>
+                <div class="col-sm-4 centered">
                     <a href="http://blogs.wefrag.com/xandar" target="_blank">
-                        <i class="fa fa-book"></i> Blog
+                        <i class="fa fa-book"></i> <br />Blog
                     </a>
-                </li>
-                <li>
+                </div>
+                <div class="col-sm-4 centered">
                     <a href="http://twitter.com/radnax_" target="_blank">
-                        <i class="fa fa-twitter"></i> Twitter
+                        <i class="fa fa-twitter"></i> <br />Twitter
                     </a>
-                </li>
-                <li>
-                    <a href="#" target="_blank">
-                        <i class="fa fa-linkedin"></i> LinkedIn
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-sm-4 centered">
+                    <a href="https://www.linkedin.com/pub/anthony-barreau/50/1a1/215" target="_blank">
+                        <i class="fa fa-linkedin"></i> <br />LinkedIn
                     </a>
-                </li>
-                <li>
-                    <a href="#" target="_blank">
-                        <i class="fa fa-flickr"></i> Flickr
+                </div>
+                <div class="col-sm-4 centered">
+                    <a href="https://www.flickr.com/photos/73941991@N05/" target="_blank">
+                        <i class="fa fa-flickr"></i> <br />Flickr
                     </a>
-                </li>
-                <li>
-                    <a href="#" target="_blank">
-                        <i class="fa fa-youtube"></i> Youtube
+                </div>
+                <div class="col-sm-4 centered">
+                    <a href="https://www.youtube.com/channel/UC-QQ92KALiZLc9h-yz9IU4g" target="_blank">
+                        <i class="fa fa-youtube"></i> <br />Youtube
                     </a>
-                </li>
-            </ul>
+                </div>
+            </div>
         </div>
     </footer>
     <script type="text/javascript" src="javascripts/libs/jquery-2.1.1.js"></script>

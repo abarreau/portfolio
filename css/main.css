@@ -1,7 +1,9 @@
 body
 {
-    background: #323232;
+    background: #80592f;
     color: #ddd;
+    font-family: 'Lato';
+    font-size: 1.6em;
 }
 
 a, a:visited
@@ -21,9 +23,24 @@ h1, h2, h3, h4
     color: #ddd;
 }
 
+h2
+{
+    font-weight: 300;
+}
+
+h3, h4
+{
+    font-weight: 700;
+}
+
 h1.inverse, h2.inverse, h3.inverse, h4.inverse
 {
     color: #323232;
+}
+
+#punchline
+{
+    font-size: 2em;
 }
 
 #navbar
@@ -81,6 +98,11 @@ h1.inverse, h2.inverse, h3.inverse, h4.inverse
 #navbar.reduced ul
 {
     line-height: 100px;
+}
+
+#navbar.reduced a
+{
+    color: #ddd;
 }
 
 #navbar.reduced .nav-brand
@@ -151,6 +173,17 @@ footer ul li
     list-style: none;
 }
 
+footer i
+{
+    font-size: 5em !important;
+}
+
+footer .row
+{
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
 .left-aligned
 {
     text-align: left;
@@ -169,6 +202,16 @@ footer ul li
 .inverse
 {
     color: #323232;
+}
+
+.uppercased
+{
+    text-transform: uppercase;
+}
+
+.emphased
+{
+    font-weight: 900;
 }
 
 section#curriculum > div.container > div.row:first-of-type
