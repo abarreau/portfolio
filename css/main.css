@@ -2,6 +2,8 @@ body
 {
     background: #80592f;
     color: #ddd;
+    font-family: 'Lato';
+    font-size: 1.6em;
 }
 
 a, a:visited
@@ -21,9 +23,24 @@ h1, h2, h3, h4
     color: #ddd;
 }
 
+h2
+{
+    font-weight: 300;
+}
+
+h3, h4
+{
+    font-weight: 700;
+}
+
 h1.inverse, h2.inverse, h3.inverse, h4.inverse
 {
     color: #323232;
+}
+
+#punchline
+{
+    font-size: 2em;
 }
 
 #navbar
@@ -185,6 +202,16 @@ footer .row
 .inverse
 {
     color: #323232;
+}
+
+.uppercased
+{
+    text-transform: uppercase;
+}
+
+.emphased
+{
+    font-weight: 900;
 }
 
 section#curriculum > div.container > div.row:first-of-type
