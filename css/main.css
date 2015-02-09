@@ -184,6 +184,11 @@ footer .row
     margin-bottom: 60px;
 }
 
+footer a, a:visited, a:hover
+{
+    color: #A9871B;
+}
+
 .left-aligned
 {
     text-align: left;
