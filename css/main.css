@@ -18,6 +18,12 @@ a:hover, a:active
     text-decoration: none;
 }
 
+a#download-pdf
+{
+	font-size: 0.5em;
+	color: #ccc;
+}
+
 h1, h2, h3, h4
 {
     color: #ddd;
@@ -184,6 +190,11 @@ footer .row
     margin-bottom: 60px;
 }
 
+footer a, a:visited, a:hover
+{
+    color: #A9871B;
+}
+
 .left-aligned
 {
     text-align: left;
@@ -305,4 +316,48 @@ section#curriculum > div.container > div.row:first-of-type
     right: 100%;
     text-align: left;
     padding-left: 75px;
+}
+
+.various-work-box
+{
+    padding: 2em;
+}
+
+.various-work-box img
+{
+    border-color: #333;
+    background-color: #333;
+}
+
+.various-work-box .image-box
+{
+    width: 10%;
+}
+
+.various-work-box .text-box
+{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.various-work-box.left-aligned .text-box
+{
+    padding-left: 1em;
+}
+
+.various-work-box.right-aligned .text-box
+{
+    padding-right: 1em;
+}
+
+.various-work-box .vertical-wrapper
+{
+    display: table;
+    height: 110px;
+    width: 90%;
+}
+
+.various-work-box h3
+{
+    margin: 0px 0px 10px 0px;
 }
