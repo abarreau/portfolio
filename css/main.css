@@ -18,6 +18,12 @@ a:hover, a:active
     text-decoration: none;
 }
 
+a#download-pdf
+{
+	font-size: 0.5em;
+	color: #ccc;
+}
+
 h1, h2, h3, h4
 {
     color: #ddd;
