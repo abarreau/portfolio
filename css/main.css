@@ -315,7 +315,7 @@ section#curriculum > div.container > div.row:first-of-type
 .various-work-box
 {
     padding: 2em;
-    border-bottom: 1px solid #bbb;
+    /*border-bottom: 1px solid #bbb;*/
 }
 
 .various-work-box img
@@ -324,12 +324,35 @@ section#curriculum > div.container > div.row:first-of-type
     background-color: #333;
 }
 
-.various-work-box.right-aligned img
+.various-work-box .image-box
 {
-    margin-left: 1em;
+    width: 10%;
 }
 
-.various-work-box.left-aligned img
+.various-work-box .text-box
 {
-    margin-right: 1em;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.various-work-box.left-aligned .text-box
+{
+    padding-left: 1em;
+}
+
+.various-work-box.right-aligned .text-box
+{
+    padding-right: 1em;
+}
+
+.various-work-box .vertical-wrapper
+{
+    display: table;
+    height: 110px;
+    width: 90%;
+}
+
+.various-work-box h3
+{
+    margin: 0px 0px 10px 0px;
 }
