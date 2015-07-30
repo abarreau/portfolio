@@ -5,7 +5,7 @@ $(document).ready(function() {
         var position = 0;
 
         if(target !== "#top") {
-            position = $(target).offset().top - 100;
+            position = $(target).offset().top; // retrancher la hauteur de la navbar
         }
 
         $("html, body").animate({
@@ -15,9 +15,9 @@ $(document).ready(function() {
 
     $(window).scroll(function() {
         if($(this).scrollTop() == 0) {
-            $("#navbar").removeClass("reduced");
+            $("nav").removeClass("reduced");
         } else {
-            $("#navbar").addClass("reduced");
+            $("nav").addClass("reduced");
         }
     });
 

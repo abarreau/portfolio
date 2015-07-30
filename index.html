@@ -9,16 +9,28 @@
     <title>Anthony Barreau</title>
 </head>
 <body>
-    <div id="navbar">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
-            <a href="#top" class="nav-brand navbar-link pull-left">Anthony Barreau</a>
-            <ul>
-                <li><a class="navbar-link" href="#projects">Works</a></li>
-                <li><a class="navbar-link" href="#curriculum">Curriculum</a></li>
-                <li><a class="navbar-link" href="#more">More infos</a></li>
-            </ul>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand navbar-link" href="#top">Anthony Barreau</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#projects" class="navbar-link">Works</a></li>
+                    <li><a href="#curriculum" class="navbar-link">Curriculum</a></li>
+                    <li><a href="#more" class="navbar-link">More infos</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
         </div>
-    </div>
+    </nav>
 
     <section id="abstract">
         <div class="container">
@@ -233,7 +245,8 @@
             </div>
         </div>
     </footer>
-    <script type="text/javascript" src="javascripts/libs/jquery-2.1.1.js"></script>
-    <script type="text/javascript" src="javascripts/app.js"></script>
+    <script src="javascripts/libs/jquery-2.1.1.js"></script>
+    <script src="javascripts/libs/bootstrap.min.js"></script>
+    <script src="javascripts/app.js"></script>
 </body>
 </html>

@@ -49,59 +49,53 @@ h1.inverse, h2.inverse, h3.inverse, h4.inverse
     font-size: 2em;
 }
 
-#navbar
+nav
 {
     transition-property: height, line-height, border-bottom, background-color;
     transition-duration: 0.5s;
-    width: 100%;
-    border-bottom: 0;
-    height: 150px;
-    position: fixed;
-    z-index: 999;
-    top: 0;
-    left: 0;
     background: rgba(50, 50, 50, 0);
     background: url("../images/bg_blurry2.jpg") fixed;
     background-size: cover;
-    line-height: 150px;
+    border: 0 !important;
 }
 
-#navbar ul
+ul.nav.navbar-nav li
 {
-    float: right;
+    color: #333 !important;
+    /*float: right;
     line-height: 150px;
     transition-property: line-height;
-    transition-duration: 0.5s;
+    transition-duration: 0.5s;*/
 }
 
 #navbar ul li
 {
-    display: inline;
+    /*display: inline;
     list-style: none;
-    margin-right: 1.5em;
+    margin-right: 1.5em;*/
 }
 
 #navbar ul li:last-child
 {
-    margin-right: 0;
+    /*margin-right: 0;*/
 }
 
 #navbar .nav-brand
 {
-    opacity: 0;
+    /*opacity: 0;
     transition-property: opacity;
-    transition-duration: 0.5s;
+    transition-duration: 0.5s;*/
 }
 
-#navbar.reduced
+nav.reduced
 {
-    height: 100px;
-    line-height: 100px;
-    border-bottom: 2px solid #444;
+    /*height: 100px;
+    line-height: 100px;*/
+    /*border-bottom: 2px solid #444;*/
     background: rgba(55, 55, 55, 1);
 }
 
-#navbar.reduced ul
+/*#navbar.reduced ul
 {
     line-height: 100px;
 }
@@ -114,7 +108,7 @@ h1.inverse, h2.inverse, h3.inverse, h4.inverse
 #navbar.reduced .nav-brand
 {
     opacity: 1;
-}
+}*/
 
 section
 {
@@ -360,4 +354,23 @@ section#curriculum > div.container > div.row:first-of-type
 .various-work-box h3
 {
     margin: 0px 0px 10px 0px;
+}
+
+@media screen and (max-width: 768px)
+{
+    section#abstract h1
+    {
+        font-size: 3em;
+    }
+
+    #punchline
+    {
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    section
+    {
+        padding: 0.5em;
+    }
 }
