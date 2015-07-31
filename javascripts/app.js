@@ -36,9 +36,9 @@ $(document).ready(function() {
      */
     $(window).scroll(function() {
         if ($(this).scrollTop() == 0) {
-            $("nav").removeClass("reduced");
+            $("nav").removeClass("nav-reduced");
         } else {
-            $("nav").addClass("reduced");
+            $("nav").addClass("nav-reduced");
         }
     });
 
