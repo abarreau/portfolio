@@ -51,7 +51,7 @@ h1.inverse, h2.inverse, h3.inverse, h4.inverse
 
 nav
 {
-    transition-property: height, line-height, border-bottom, background-color;
+    transition-property: height, line-height, border-bottom, background-color, color;
     transition-duration: 0.5s;
     background: rgba(50, 50, 50, 0);
     background: url("../images/bg_blurry2.jpg") fixed;
@@ -59,56 +59,24 @@ nav
     border: 0 !important;
 }
 
-ul.nav.navbar-nav li
+.navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-link
 {
-    color: #333 !important;
-    /*float: right;
-    line-height: 150px;
-    transition-property: line-height;
-    transition-duration: 0.5s;*/
-}
-
-#navbar ul li
-{
-    /*display: inline;
-    list-style: none;
-    margin-right: 1.5em;*/
-}
-
-#navbar ul li:last-child
-{
-    /*margin-right: 0;*/
-}
-
-#navbar .nav-brand
-{
-    /*opacity: 0;
-    transition-property: opacity;
-    transition-duration: 0.5s;*/
+    color: #333;
 }
 
 nav.reduced
 {
-    /*height: 100px;
-    line-height: 100px;*/
-    /*border-bottom: 2px solid #444;*/
-    background: rgba(55, 55, 55, 1);
+    background: rgba(50, 50, 50, 1);
 }
 
-/*#navbar.reduced ul
+nav.reduced.navbar-inverse .navbar-nav > li > a, nav.reduced.navbar-inverse .navbar-link
 {
-    line-height: 100px;
+    color: #999;
 }
 
-#navbar.reduced a
-{
-    color: #ddd;
-}
-
-#navbar.reduced .nav-brand
-{
-    opacity: 1;
-}*/
+/***********************************/
+/*            SECTIONS             */
+/***********************************/
 
 section
 {
@@ -358,6 +326,16 @@ section#curriculum > div.container > div.row:first-of-type
 
 @media screen and (max-width: 768px)
 {
+    nav
+    {
+        background: rgba(55, 55, 55, 1);
+    }
+
+    .navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-link
+    {
+        color: #999;
+    }
+
     section#abstract h1
     {
         font-size: 3em;
@@ -372,5 +350,39 @@ section#curriculum > div.container > div.row:first-of-type
     section
     {
         padding: 0.5em;
+    }
+
+    #resume
+    {
+        /*text-align: justify;*/
+    }
+
+    #resume ul li
+    {
+        margin-bottom: 0.7em;
+    }
+}
+
+@media (min-width: 768px)
+{
+    .container
+    {
+        width: 670px;
+    }
+}
+
+@media (min-width: 992px)
+{
+    .container
+    {
+        width: 890px
+    }
+}
+
+@media (min-width: 1200px)
+{
+    .container
+    {
+        width: 1100px;
     }
 }
