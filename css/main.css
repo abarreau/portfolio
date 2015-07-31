@@ -6,7 +6,7 @@ body
 {
     background: #80592f;
     color: #ddd;
-    font-family: 'Lato';
+    font-family: 'Lato', 'Verdana', sans-serif;
     font-size: 1.6em;
 }
 
@@ -54,14 +54,21 @@ nav
     background: rgba(50, 50, 50, 0);
     background: url("../images/bg_blurry2.jpg") fixed;
     background-size: cover;
-    border: 0 !important;
 }
 
+.navbar-inverse
+{
+    background: rgba(50, 50, 50, 0);
+    border-bottom: 0;
+}
 .navbar-inverse .navbar-nav > li > a,
-.navbar-inverse .navbar-link { color: #333; }
+.navbar-inverse .navbar-link { color: #b21515; }
 
-.nav-reduced { background: rgba(50, 50, 50, 1); }
-
+.nav-reduced
+{
+    background: rgba(50, 50, 50, 1);
+    border-bottom: 1px solid #555;
+}
 .nav-reduced.navbar-inverse .navbar-nav > li > a,
 .nav-reduced.navbar-inverse .navbar-link { color: #999; }
 
@@ -201,8 +208,8 @@ section { padding: 5em; }
 
 .various-work-box { padding: 2em; }
 .various-work-box .image-box { width: 10%; }
-.various-work-box.left-aligned .text-box { padding-left: 1em; }
-.various-work-box.right-aligned .text-box { padding-right: 1em; }
+.various-work-box.photography .text-box { padding-left: 1em; }
+.various-work-box.personnal-projects .text-box { padding-right: 1em; }
 .various-work-box h3 { margin: 0px 0px 10px 0px; }
 
 .various-work-box img
@@ -224,6 +231,13 @@ section { padding: 5em; }
     width: 90%;
 }
 
+.visible-md.photography { text-align: left; }
+.visible-md.personnal-projects { text-align: right; }
+
+.visible-xs.various-work-box { text-align: justify }
+.visible-xs.various-work-box h3 { text-align: center}
+.visible-xs.various-work-box .image-caption { text-align: center; margin-bottom: 1em; }
+
 
 /*************************************/
 /*  RESPONSIVE XS DEVICES (<= 768px) */
@@ -232,10 +246,10 @@ section { padding: 5em; }
 @media screen and (max-width: 768px)
 {
     #abstract h1 { font-size: 3em; }
-    #punchline { font-size: 1em; font-weight: bold; }
+    .punchline { font-size: 1em; font-weight: bold; }
     .download-pdf { margin-top: 1em; }
 
-    nav { background: rgba(55, 55, 55, 1); }
+    nav, .navbar-inverse { background: rgba(55, 55, 55, 1); }
     .navbar-inverse .navbar-nav > li > a,
     .navbar-inverse .navbar-link { color: #999; }
 
@@ -247,7 +261,6 @@ section { padding: 5em; }
 
     #more .col-sm-6, .col-sm-4 { margin-bottom: 60px; }
     #more .row { margin-bottom: 0; }
-
 }
 
 
@@ -257,20 +270,22 @@ section { padding: 5em; }
 @media (min-width: 768px)
 {
     .container { width: 670px; }
+    .navbar-nav { float: right; }
 }
 
 
 /*************************************/
-/*  RESPONSIVE XS DEVICES (>= 992px) */
+/*  RESPONSIVE MD DEVICES (>= 992px) */
 /*************************************/
 @media (min-width: 992px)
 {
     .container { width: 890px }
 }
 
-/*************************************/
-/*  RESPONSIVE XS DEVICES (>= 1200px) */
-/*************************************/
+
+/**************************************/
+/*  RESPONSIVE LG DEVICES (>= 1200px) */
+/**************************************/
 @media (min-width: 1200px)
 {
     .container { width: 1100px; }

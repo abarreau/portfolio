@@ -35,7 +35,7 @@ $(document).ready(function() {
      * Changes the navbar style on scroll
      */
     $(window).scroll(function() {
-        if ($(this).scrollTop() == 0) {
+        if ($(this).scrollTop() <= 100) {
             $("nav").removeClass("nav-reduced");
         } else {
             $("nav").addClass("nav-reduced");
