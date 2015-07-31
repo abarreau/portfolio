@@ -9,21 +9,33 @@
     <title>Anthony Barreau</title>
 </head>
 <body>
-    <div id="navbar">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
-            <a href="#top" class="nav-brand navbar-link pull-left">Anthony Barreau</a>
-            <ul>
-                <li><a class="navbar-link" href="#projects">Works</a></li>
-                <li><a class="navbar-link" href="#curriculum">Curriculum</a></li>
-                <li><a class="navbar-link" href="#more">More infos</a></li>
-            </ul>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" id="navbar-collapse-button" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand navbar-link" href="#top">Anthony Barreau</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#projects" class="navbar-link">Works</a></li>
+                    <li><a href="#curriculum" class="navbar-link">Curriculum</a></li>
+                    <li><a href="#more" class="navbar-link">More infos</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
         </div>
-    </div>
+    </nav>
 
     <section id="abstract">
         <div class="container">
             <h1 class="inverse">Anthony Barreau</h1>
-            <p id="punchline" class="centered inverse">I'm a french software and web developer.</p>
+            <p class="punchline centered inverse">I'm a french software and web developer.</p>
             <p class="centered inverse">
                 <a href="mailto:barreau.anthony@gmail.com"><i class="fa fa-mail-forward"></i> barreau.anthony@gmail.com</a>
                 <span> &boxh; <a class="navbar-link" href="#more">Additional links</a></span>
@@ -35,7 +47,7 @@
         <div class="container">
             <h2 class="inverse uppercased"><span class="emphased">Various</span> Works</h2>
 
-            <div class="right-aligned various-work-box">
+            <div class="personnal-projects various-work-box visible-md visible-lg">
                 <div class="vertical-wrapper pull-left">
                     <div class="text-box">
                         <h3 class="inverse">Personnal projects</h3>
@@ -47,26 +59,48 @@
                 </div>
                 <div style="clear: both"></div>
             </div>
-            <div class="left-aligned various-work-box">
+
+            <div class="photography various-work-box visible-md visible-lg">
                 <div class="image-box pull-left">
                     <img src="images/various-works-photography.jpg" class="img-circle img-thumbnail" />
                 </div>
                 <div class="vertical-wrapper pull-left">
                     <div class="text-box">
                         <h3 class="inverse">Photography</h3>
-                        I like to take pictures of (almost) everything. Visit my <a href="https://www.flickr.com/photos/73941991@N05/" target="_blank">Flickr</a> gallery to discover my various works.
+                        I like to take pictures of (almost) everything. Visit my <a href="https://www.flickr.com/photos/73941991@N05/" target="_blank">Flickr</a> profile to discover my gallery.
                     </div>
                 </div>
                 <div style="clear: both"></div>
             </div>
+
+            <div class="visible-sm visible-xs personnal-projects various-work-box">
+                <div class="image-caption">
+                    <img src="images/various-works-personnal.jpg" class="img-circle img-thumbnail" />
+                </div>
+                <h3 class="inverse">Personnal projects</h3>
+                Sometimes, I code on my spare time (mostly web apps). Visit my <a href="https://github.com/xandar" target="_blank">Github</a> for a list of differents repositories I contributed during the last few years.
+            </div>
+
+            <div class="visible-sm visible-xs photography various-work-box">
+                <div class="image-caption">
+                    <img src="images/various-works-photography.jpg" class="img-circle img-thumbnail" />
+                </div>
+                <h3 class="inverse">Photography</h3>
+                I like to take pictures of (almost) everything. Visit my <a href="https://www.flickr.com/photos/73941991@N05/" target="_blank">Flickr</a> profile to discover my gallery.
+            </div>
+        </div>
     </section>
 
     <section id="curriculum">
         <div class="container">
-            <h2 class="inverse uppercased"><span class="emphased">Curriculum</span> Vitae <a id="download-pdf" class="pull-right" target="_blank" href="/cv-anthony-barreau.pdf">Download as PDF <i class="fa fa-file-pdf-o"></i></a></h2>
+            <h2 class="inverse uppercased">
+                <span class="emphased">Curriculum</span> Vitae
+                <a class="download-pdf pull-right hidden-xs" target="_blank" href="/cv-anthony-barreau.pdf">Download as PDF <i class="fa fa-file-pdf-o"></i></a>
+                <a class="download-pdf visible-xs" target="_blank" href="/cv-anthony-barreau.pdf">Download as PDF <i class="fa fa-file-pdf-o"></i></a>
+            </h2>
 
-            <div class="row">
-                <div class="col-sm-6 col-lg-4 col-xs-12">
+            <div class="row" id="resume">
+                <div class="col-sm-12 col-md-12 col-lg-4 col-xs-12">
                     <h3 class="centered inverse">Web</h3>
                     <ul>
                         <li>Programming languages : HTML5 <i class="fa fa-html5"></i> / CSS3 <i class="fa fa-css3"></i> / Less / PHP</li>
@@ -74,7 +108,7 @@
                         <li>CMS : Wordpress <i class="fa fa-wordpress"></i>, Joomla <i class="fa fa-joomla"></i></li>
                     </ul>
                 </div>
-                <div class="col-sm-6 col-lg-4 col-xs-12">
+                <div class="col-sm-12 col-md-12 col-lg-4 col-xs-12">
                     <h3 class="centered inverse">Software</h3>
                     <ul>
                         <li>Programming languages : C, C#, Java</li>
@@ -82,7 +116,7 @@
                         <li>Client-server model</li>
                     </ul>
                 </div>
-                <div class="col-sm-6 col-lg-4 col-xs-12">
+                <div class="col-sm-12 col-md-12 col-lg-4 col-xs-12">
                     <h3 class="centered inverse">Miscellaneous</h3>
                     <ul>
                         <li>Relational and schema oriented databases</li>
@@ -94,106 +128,182 @@
                 </div>
             </div>
 
-            <div class="timeline-wrapper">
-                <div class="timeline timeline-leftpart">
+            <div id="cv-timeline" class="hidden-xs">
+                <div class="timeline-wrapper">
+                    <div class="timeline timeline-leftpart">
+                    </div>
+                    <div class="timeline timeline-rightpart">
+                        <div class="middle-wrapper">
+                            <div class="top-50">
+                                <span class="big">Natural Pad</span><br />
+                                <span class="small">Web and software developer and Scrum master</span><br />
+                                <span class="small">Development of web oriented applications (jQuery, NodeJS, BackboneJS, MongoDB, ExpressJS, Android SDK)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overlay overlay-top">
+                        <span>2013</span>
+                    </div>
                 </div>
-                <div class="timeline timeline-rightpart">
-                    <div class="middle-wrapper">
-                        <div class="top-50">
-                            <span class="big">Natural Pad</span><br />
-                            <span class="small">Web and software developer and Scrum master</span><br />
-                            <span class="small">Development of web oriented applications (jQuery, NodeJS, BackboneJS, MongoDB, ExpressJS, Android SDK)</span>
+
+                <div class="timeline-wrapper">
+                    <div class="timeline timeline-leftpart">
+                        <div class="middle-wrapper">
+                            <div class="top-50">
+                                <span class="big">LIRMM</span><br />
+                                <span class="small">Research engineer (1 year)</span><br />
+                                <span class="small">Design of a serious game and client-server applications (Unity3D, Java)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline timeline-rightpart">
+                    </div>
+                    <div class="overlay">
+                        <span>2011</span>
+                    </div>
+                </div>
+                <div class="timeline-wrapper">
+                    <div class="timeline timeline-leftpart">
+                    </div>
+                    <div class="timeline timeline-rightpart">
+                        <div class="middle-wrapper">
+                            <div class="top-50">
+                                <span class="big">Bachelor Degree in Computer Science</span><br />
+                                <span class="small"><i class="fa fa-university"></i> Montpellier Institute of Technology, FRANCE</span><br/>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="overlay overlay-top">
-                    <span>2013</span>
+                <div class="timeline-wrapper">
+                    <div class="timeline timeline-leftpart">
+                        <div class="middle-wrapper">
+                            <div class="top-50">
+                                <span class="big">LIRMM</span><br />
+                                <span class="small">Intership (16 weeks)</span><br />
+                                <span class="small">Design of a serious game and client-server applications (Unity3D, Java)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline timeline-rightpart">
+                    </div>
+                </div>
+                <div class="timeline-wrapper">
+                    <div class="timeline timeline-leftpart">
+                    </div>
+                    <div class="timeline timeline-rightpart">
+                        <div class="middle-wrapper">
+                            <div class="top-50">
+                                <span class="big">H.N.D in Computer Science (IT Management)</span><br />
+                                <span class="small"><i class="fa fa-university"></i> Montpellier Institute of Technology, FRANCE</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overlay">
+                        <span>2010</span>
+                    </div>
+                </div>
+                <div class="timeline-wrapper">
+                    <div class="timeline timeline-leftpart">
+                        <div class="middle-wrapper">
+                            <div class="top-50">
+                                <span class="big">LIRMM</span><br />
+                                <span class="small">Intership (12 weeks)</span><br />
+                                <span class="small">Design and development of a serious game (jQuery, gameQuery, Spring)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline timeline-rightpart">
+                    </div>
+                </div>
+                <div class="timeline-wrapper">
+                    <div class="timeline timeline-leftpart">
+                    </div>
+                    <div class="timeline timeline-rightpart">
+                        <div class="middle-wrapper">
+                            <div class="top-50">
+                                <span class="big">A-Levels in Science</span><br />
+                                <span class="small">with honours</span><br />
+                                <span class="small"><i class="fa fa-university"></i> Champollion High School - Lattes, FRANCE</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overlay overlay-bottom">
+                        <span>2008</span>
+                    </div>
                 </div>
             </div>
 
-            <div class="timeline-wrapper">
-                <div class="timeline timeline-leftpart">
-                    <div class="middle-wrapper">
-                        <div class="top-50">
-                            <span class="big">LIRMM</span><br />
-                            <span class="small">Research engineer (1 year)</span><br />
-                            <span class="small">Design of a serious game and client-server applications (Unity3D, Java)</span>
-                        </div>
+            <div id="cv-timeline-sd" class="visible-xs">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <h4>July 2012 - August 2015</h4>
+                    </div>
+                    <div class="col-xs-9">
+                        <h4>NaturalPad</h4>
+                        <span>Web and software developer and Scrum master (3 years)<br />
+                        Development of web oriented applications (jQuery, NodeJS, BackboneJS, MongoDB, ExpressJS, Android SDK)</span>
                     </div>
                 </div>
-                <div class="timeline timeline-rightpart">
-                </div>
-                <div class="overlay">
-                    <span>2011</span>
-                </div>
-            </div>
-            <div class="timeline-wrapper">
-                <div class="timeline timeline-leftpart">
-                </div>
-                <div class="timeline timeline-rightpart">
-                    <div class="middle-wrapper">
-                        <div class="top-50">
-                            <span class="big">Bachelor Degree in Computer Science</span><br />
-                            <span class="small"><i class="fa fa-university"></i> Montpellier Institute of Technology, FRANCE</span><br/>
-                        </div>
+                <div class="row">
+                    <div class="col-xs-3">
+                        <h4>July 2011 - June 2012</h4>
+                    </div>
+                    <div class="col-xs-9">
+                        <h4>LIRMM</h4>
+                        <span>Research Engineer (1 year)<br />
+                        Design of a serious game and client-server applications (Unity3D, Java)</span>
                     </div>
                 </div>
-            </div>
-            <div class="timeline-wrapper">
-                <div class="timeline timeline-leftpart">
-                    <div class="middle-wrapper">
-                        <div class="top-50">
-                            <span class="big">LIRMM</span><br />
-                            <span class="small">Intership (16 weeks)</span><br />
-                            <span class="small">Design of a serious game and client-server applications (Unity3D, Java)</span>
-                        </div>
+                <div class="row">
+                    <div class="col-xs-3">
+                        <h4>September 2010 - June 2011</h4>
+                    </div>
+                    <div class="col-xs-9">
+                        <h4>Bachelor Degree in Computer Science</h4>
+                        <span><i class="fa fa-university"></i>  Montpellier Institute of Technology, FRANCE</span>
                     </div>
                 </div>
-                <div class="timeline timeline-rightpart">
-                </div>
-            </div>
-            <div class="timeline-wrapper">
-                <div class="timeline timeline-leftpart">
-                </div>
-                <div class="timeline timeline-rightpart">
-                    <div class="middle-wrapper">
-                        <div class="top-50">
-                            <span class="big">H.N.D in Computer Science (IT Management)</span><br />
-                            <span class="small"><i class="fa fa-university"></i> Montpellier Institute of Technology, FRANCE</span>
-                        </div>
+                <div class="row">
+                    <div class="col-xs-3">
+                        <h4>March 2011 - June 2011</h4>
+                    </div>
+                    <div class="col-xs-9">
+                        <h4>LIRMM</h4>
+                        <span>Internship (16 weeks)<br />
+                        Design of a serious game and client-server applications (Unity3D, Java)</span>
                     </div>
                 </div>
-                <div class="overlay">
-                    <span>2010</span>
-                </div>
-            </div>
-            <div class="timeline-wrapper">
-                <div class="timeline timeline-leftpart">
-                    <div class="middle-wrapper">
-                        <div class="top-50">
-                            <span class="big">LIRMM</span><br />
-                            <span class="small">Intership (12 weeks)</span><br />
-                            <span class="small">Design and development of a serious game (jQuery, gameQuery, Spring)</span>
-                        </div>
+
+                <div class="row">
+                    <div class="col-xs-3">
+                        <h4>September 2008 - June 2010</h4>
+                    </div>
+                    <div class="col-xs-9">
+                        <h4>H.N.D in computer Science (IT Management)</h4>
+                        <span><i class="fa fa-university"></i> Montpellier Institue of Technology, FRANCE</span>
                     </div>
                 </div>
-                <div class="timeline timeline-rightpart">
-                </div>
-            </div>
-            <div class="timeline-wrapper">
-                <div class="timeline timeline-leftpart">
-                </div>
-                <div class="timeline timeline-rightpart">
-                    <div class="middle-wrapper">
-                        <div class="top-50">
-                            <span class="big">A-Levels in Science</span><br />
-                            <span class="small">with honours</span><br />
-                            <span class="small"><i class="fa fa-university"></i> Champollion High School - Lattes, FRANCE</span>
-                        </div>
+
+                <div class="row">
+                    <div class="col-xs-3">
+                        <h4>February 2010 - May 2010</h4>
+                    </div>
+                    <div class="col-xs-9">
+                        <h4>LIRMM</h4>
+                        <span>Internship (12 weeks)<br />
+                        Design and development of a serious game (jQuery, gameQuery, Spring)</span>
                     </div>
                 </div>
-                <div class="overlay overlay-bottom">
-                    <span>2008</span>
+
+                <div class="row">
+                    <div class="col-xs-3">
+                        <h4>September 2005 - June 2008</h4>
+                    </div>
+                    <div class="col-xs-9">
+                        <h4>A-Levels in Science</h4>
+                        <span>with honours<br />
+                        <i class="fa fa-university"></i> Champollion High Scool - Lattes, FRANCE</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -233,7 +343,8 @@
             </div>
         </div>
     </footer>
-    <script type="text/javascript" src="javascripts/libs/jquery-2.1.1.js"></script>
-    <script type="text/javascript" src="javascripts/app.js"></script>
+    <script src="javascripts/libs/jquery-2.1.1.js"></script>
+    <script src="javascripts/libs/bootstrap.min.js"></script>
+    <script src="javascripts/app.js"></script>
 </body>
 </html>
