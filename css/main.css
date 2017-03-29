@@ -2,7 +2,7 @@ body
 {
     background: #2f8494;
     color: #ddd;
-    font-family: 'Lato';
+    font-family: 'Roboto Slab';
     font-size: 1.6em;
 }
 
@@ -27,6 +27,7 @@ a#download-pdf
 h1, h2, h3, h4
 {
     color: #333;
+    font-family: 'Lato';
 }
 
 h2
@@ -46,6 +47,7 @@ h1.inverse, h2.inverse, h3.inverse, h4.inverse
 
 #punchline
 {
+    font-family: 'Roboto Slab';
     font-size: 2em;
     font-weight: bold;
     text-shadow: 2px 2px 3px #bbb;
@@ -55,6 +57,7 @@ h1.inverse, h2.inverse, h3.inverse, h4.inverse
 {
     transition-property: height, line-height, border-bottom, background-color;
     transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
     width: 100%;
     border-bottom: 0;
     height: 150px;
@@ -62,8 +65,7 @@ h1.inverse, h2.inverse, h3.inverse, h4.inverse
     z-index: 999;
     top: 0;
     left: 0;
-    background: rgba(50, 50, 50, 0);
-    background: url("../images/bg_blurry2.jpg") fixed;
+    background: rgba(55, 55, 55, 0);
     background-size: cover;
     line-height: 150px;
 }

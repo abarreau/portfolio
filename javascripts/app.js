@@ -1,8 +1,9 @@
+'use strict';
 /**
  * Handles the main visual effects of the page
  */
 $(document).ready(function() {
-    var navbarHeight            = $("nav").height();
+    var navbarHeight            = 100;
     var navbarCollapseButton    = $("#navbar-collapse-button");
     var navbar                  = $("#navbar");
 
@@ -35,15 +36,21 @@ $(document).ready(function() {
      * Changes the navbar style on scroll
      */
     $(window).scroll(function() {
-        if ($(this).scrollTop() <= 100) {
-            $("nav").removeClass("nav-reduced");
+        console.log($(this).scrollTop());
+        
+        if ($(this).scrollTop() == 0) {
+            $("#navbar").removeClass("reduced");
         } else {
-            $("nav").addClass("nav-reduced");
+            $("#navbar").addClass("reduced");
         }
     });
 
     /**
      * Sets the first section to the height of the viewport
      */
-    $("#abstract").css("height", $(window).height());
+    $("#abstract").css("min-height", $(window).height());
+    
+    $( window ).resize(function() {
+        $("#abstract").css("height", $(window).height());
+    });
 });
