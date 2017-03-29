@@ -1,8 +1,8 @@
 body
 {
-    background: #80592f;
+    background: #2f8494;
     color: #ddd;
-    font-family: 'Lato';
+    font-family: 'Roboto Slab';
     font-size: 1.6em;
 }
 
@@ -14,7 +14,7 @@ a, a:visited
 
 a:hover, a:active
 {
-    color: #d31313;
+    color: #0391ac;
     text-decoration: none;
 }
 
@@ -26,7 +26,8 @@ a#download-pdf
 
 h1, h2, h3, h4
 {
-    color: #ddd;
+    color: #333;
+    font-family: 'Lato';
 }
 
 h2
@@ -41,18 +42,22 @@ h3, h4
 
 h1.inverse, h2.inverse, h3.inverse, h4.inverse
 {
-    color: #323232;
+    color: #dedede;
 }
 
 #punchline
 {
+    font-family: 'Roboto Slab';
     font-size: 2em;
+    font-weight: bold;
+    text-shadow: 2px 2px 3px #bbb;
 }
 
 #navbar
 {
     transition-property: height, line-height, border-bottom, background-color;
     transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
     width: 100%;
     border-bottom: 0;
     height: 150px;
@@ -60,8 +65,7 @@ h1.inverse, h2.inverse, h3.inverse, h4.inverse
     z-index: 999;
     top: 0;
     left: 0;
-    background: rgba(50, 50, 50, 0);
-    background: url("../images/bg_blurry2.jpg") fixed;
+    background: rgba(55, 55, 55, 0);
     background-size: cover;
     line-height: 150px;
 }
@@ -84,6 +88,11 @@ h1.inverse, h2.inverse, h3.inverse, h4.inverse
 #navbar ul li:last-child
 {
     margin-right: 0;
+}
+
+#navbar a
+{
+	color: #ddd;
 }
 
 #navbar .nav-brand
@@ -130,7 +139,7 @@ section#abstract
 
 section#abstract p
 {
-    margin-top: 5em;
+    margin-top: 2em;
 }
 
 section#abstract h1
@@ -138,7 +147,13 @@ section#abstract h1
     font-weight: bold;
     font-size: 7em;
     text-align: center;
-    text-shadow: 3px 4px 0px #ddd, 9px 12px 0px #888;
+    text-shadow: 3px 4px 0px #6d6d6d, 9px 12px 10px #2b2b2b;
+}
+
+section#abstract object
+{
+	width: 200px;
+	height: 200px;
 }
 
 section#projects
@@ -192,7 +207,7 @@ footer .row
 
 footer a, a:visited, a:hover
 {
-    color: #A9871B;
+    color: #0391ac;
 }
 
 .left-aligned
