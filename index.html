@@ -5,53 +5,45 @@
     <link rel="stylesheet" href="css/bootstrap.css" media="screen" />
     <link rel="stylesheet" href="css/main.css" media="screen" />
     <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,700,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <title>Anthony Barreau</title>
+    <link href='https://fonts.googleapis.com/css?family=Lato:100,300,700,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <title>Anthony Barreau - Rocket Science</title>
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div id="navbar">
         <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" id="navbar-collapse-button" data-toggle="collapse" data-target="#navbar"
-                        aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand navbar-link" href="#top">Anthony Barreau</a>
-            </div>
-            <div id="navbar" class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="#projects" class="navbar-link">Works</a></li>
-                    <li><a href="#curriculum" class="navbar-link">Curriculum</a></li>
-                    <li><a href="#more" class="navbar-link">More infos</a></li>
-                </ul>
-            </div>
-            <!--/.nav-collapse -->
+            <a href="#top" class="nav-brand navbar-link pull-left">Anthony Barreau</a>
+            <ul>
+                <li><a class="navbar-link" href="#projects">Travaux</a></li>
+                <li><a class="navbar-link" href="#curriculum">Curriculum</a></li>
+                <li><a class="navbar-link" href="#more">Plus d'informations</a></li>
+            </ul>
         </div>
-    </nav>
+    </div>
 
     <section id="abstract">
         <div class="container">
             <h1 class="inverse">Anthony Barreau</h1>
-            <p class="punchline centered inverse">I'm a french software and web developer.</p>
+            <p class="centered">
+                <img src="images/rocket.png" />
+            </p>
+            <p id="punchline" class="centered inverse">Je suis un développeur web et logiciel.</p>
             <p class="centered inverse">
                 <a href="mailto:barreau.anthony@gmail.com"><i class="fa fa-mail-forward"></i> barreau.anthony@gmail.com</a>
-                <span> &boxh; <a class="navbar-link" href="#more">Additional links</a></span>
+                <span> &boxh; <a class="navbar-link" href="#more">Liens additionnels</a></span>
             </p>
         </div>
     </section>
 
     <section id="projects">
         <div class="container">
-            <h2 class="inverse uppercased"><span class="emphased">Various</span> Works</h2>
+            <h2 class="uppercased"><span class="emphased">Travaux</span> Réalisés</h2>
 
-            <div class="personnal-projects various-work-box visible-md visible-lg">
+            <div class="right-aligned various-work-box">
                 <div class="vertical-wrapper pull-left">
                     <div class="text-box">
-                        <h3 class="inverse">Personnal projects</h3>
-                        Sometimes, I code on my spare time (mostly web apps). Visit my <a href="https://github.com/xandar" target="_blank">Github</a> for a list of differents repositories I contributed during the last few years.
+                        <h3 class="inverse">Projets personnels</h3>
+                        Parfois, je code sur mon temps libre (majoritairement des applications web). Visitez mon <a href="https://github.com/xandar" target="_blank">Github</a> pour consulter la liste des différents dépots auxquels j'ai contribué durant les dernières années.
                     </div>
                 </div>
                 <div class="image-box pull-left">
@@ -59,251 +51,183 @@
                 </div>
                 <div style="clear: both"></div>
             </div>
-
-            <div class="photography various-work-box visible-md visible-lg">
+            <div class="left-aligned various-work-box">
                 <div class="image-box pull-left">
                     <img src="images/various-works-photography.jpg" class="img-circle img-thumbnail" />
                 </div>
                 <div class="vertical-wrapper pull-left">
                     <div class="text-box">
-                        <h3 class="inverse">Photography</h3>
-                        I like to take pictures of (almost) everything. Visit my <a href="https://www.flickr.com/photos/73941991@N05/" target="_blank">Flickr</a> profile to discover my gallery.
-                    </div>
+                        <h3 class="inverse">Photographie</h3>
+                        J'aime prendre (presque) tout en photo. Visitez ma galerie <a href="https://www.flickr.com/photos/73941991@N05/" target="_blank">Flickr</a> pour découvrir mes différents clichés.
                 </div>
                 <div style="clear: both"></div>
             </div>
-
-            <div class="visible-sm visible-xs personnal-projects various-work-box">
-                <div class="image-caption">
-                    <img src="images/various-works-personnal.jpg" class="img-circle img-thumbnail" />
-                </div>
-                <h3 class="inverse">Personnal projects</h3>
-                Sometimes, I code on my spare time (mostly web apps). Visit my <a href="https://github.com/xandar" target="_blank">Github</a> for a list of differents repositories I contributed during the last few years.
-            </div>
-
-            <div class="visible-sm visible-xs photography various-work-box">
-                <div class="image-caption">
-                    <img src="images/various-works-photography.jpg" class="img-circle img-thumbnail" />
-                </div>
-                <h3 class="inverse">Photography</h3>
-                I like to take pictures of (almost) everything. Visit my <a href="https://www.flickr.com/photos/73941991@N05/" target="_blank">Flickr</a> profile to discover my gallery.
-            </div>
-        </div>
     </section>
 
     <section id="curriculum">
         <div class="container">
-            <h2 class="inverse uppercased">
-                <span class="emphased">Curriculum</span> Vitae
-                <a class="download-pdf pull-right hidden-xs" target="_blank" href="/cv-anthony-barreau.pdf">Download as PDF <i class="fa fa-file-pdf-o"></i></a>
-                <a class="download-pdf visible-xs" target="_blank" href="/cv-anthony-barreau.pdf">Download as PDF <i class="fa fa-file-pdf-o"></i></a>
-            </h2>
+            <h2 class="inverse uppercased"><span class="emphased">Curriculum</span> Vitae <a id="download-pdf" class="pull-right" target="_blank" href="/cv-anthony-barreau.pdf">Télécharger en PDF <i class="fa fa-file-pdf-o"></i></a></h2>
 
-            <div class="row" id="resume">
-                <div class="col-sm-12 col-md-12 col-lg-4 col-xs-12">
+            <div class="row">
+                <div class="col-sm-6 col-lg-4 col-xs-12">
                     <h3 class="centered inverse">Web</h3>
                     <ul>
-                        <li>Programming languages : HTML5 <i class="fa fa-html5"></i> / CSS3 <i class="fa fa-css3"></i> / Less / PHP</li>
+                        <li>Langages de programmation : HTML5 <i class="fa fa-html5"></i> / CSS3 <i class="fa fa-css3"></i> / Less / PHP</li>
                         <li>Frameworks (Symfony, NodeJS, ExpressJS, BackboneJS, Underscore, jQuery, ...)</li>
                         <li>CMS : Wordpress <i class="fa fa-wordpress"></i>, Joomla <i class="fa fa-joomla"></i></li>
                     </ul>
                 </div>
-                <div class="col-sm-12 col-md-12 col-lg-4 col-xs-12">
+                <div class="col-sm-6 col-lg-4 col-xs-12">
                     <h3 class="centered inverse">Software</h3>
                     <ul>
-                        <li>Programming languages : C, C#, Java</li>
+                        <li>Langages de programmation : C, C#, Java</li>
                         <li>Frameworks : Play!, Unity3D, Android <i class="fa fa-android"></i></li>
-                        <li>Client-server model</li>
+                        <li>Architecture client/serveur</li>
                     </ul>
                 </div>
-                <div class="col-sm-12 col-md-12 col-lg-4 col-xs-12">
-                    <h3 class="centered inverse">Miscellaneous</h3>
+                <div class="col-sm-6 col-lg-4 col-xs-12">
+                    <h3 class="centered inverse">Divers</h3>
                     <ul>
-                        <li>Relational and schema oriented databases</li>
-                        <li>Design patterns, UML modeling</li>
-                        <li>Agile development (Scrum)</li>
-                        <li>English, spoken and written</li>
-                        <li>French, mother tongue</li>
+                        <li>Bases de données relationnelles et orientées schéma</li>
+                        <li>Design patterns, Modélisation UML</li>
+                        <li>Développement Agile (Scrum &amp; Kanban)</li>
+                        <li>Anglais, écrit et parlé</li>
+                        <li>Français, langue maternelle</li>
                     </ul>
                 </div>
             </div>
 
-            <div id="cv-timeline" class="hidden-xs">
-                <div class="timeline-wrapper">
-                    <div class="timeline timeline-leftpart">
-                    </div>
-                    <div class="timeline timeline-rightpart">
-                        <div class="middle-wrapper">
-                            <div class="top-50">
-                                <span class="big">Natural Pad</span><br />
-                                <span class="small">Web and software developer and Scrum master</span><br />
-                                <span class="small">Development of web oriented applications (jQuery, NodeJS, BackboneJS, MongoDB, ExpressJS, Android SDK)</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="overlay overlay-top">
-                        <span>2013</span>
-                    </div>
-                </div>
-
-                <div class="timeline-wrapper">
-                    <div class="timeline timeline-leftpart">
-                        <div class="middle-wrapper">
-                            <div class="top-50">
-                                <span class="big">LIRMM</span><br />
-                                <span class="small">Research engineer (1 year)</span><br />
-                                <span class="small">Design of a serious game and client-server applications (Unity3D, Java)</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline timeline-rightpart">
-                    </div>
-                    <div class="overlay">
-                        <span>2011</span>
-                    </div>
-                </div>
-                <div class="timeline-wrapper">
-                    <div class="timeline timeline-leftpart">
-                    </div>
-                    <div class="timeline timeline-rightpart">
-                        <div class="middle-wrapper">
-                            <div class="top-50">
-                                <span class="big">Bachelor Degree in Computer Science</span><br />
-                                <span class="small"><i class="fa fa-university"></i> Montpellier Institute of Technology, FRANCE</span><br/>
-                            </div>
+            <div class="timeline-wrapper">
+                <div class="timeline timeline-leftpart">
+                    <div class="middle-wrapper">
+                        <div class="top-50">
+                            <span class="big">Id Est Multimedia</span><br />
+                            <span class="small">Développeur web</span><br />
+                            <span class="small">Développement de sites et applications web (HTML/CSS, PHP, Wordpress, Joomla)</span>
                         </div>
                     </div>
                 </div>
-                <div class="timeline-wrapper">
-                    <div class="timeline timeline-leftpart">
-                        <div class="middle-wrapper">
-                            <div class="top-50">
-                                <span class="big">LIRMM</span><br />
-                                <span class="small">Intership (16 weeks)</span><br />
-                                <span class="small">Design of a serious game and client-server applications (Unity3D, Java)</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline timeline-rightpart">
-                    </div>
+                <div class="timeline timeline-rightpart">
                 </div>
-                <div class="timeline-wrapper">
-                    <div class="timeline timeline-leftpart">
-                    </div>
-                    <div class="timeline timeline-rightpart">
-                        <div class="middle-wrapper">
-                            <div class="top-50">
-                                <span class="big">H.N.D in Computer Science (IT Management)</span><br />
-                                <span class="small"><i class="fa fa-university"></i> Montpellier Institute of Technology, FRANCE</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="overlay">
-                        <span>2010</span>
-                    </div>
-                </div>
-                <div class="timeline-wrapper">
-                    <div class="timeline timeline-leftpart">
-                        <div class="middle-wrapper">
-                            <div class="top-50">
-                                <span class="big">LIRMM</span><br />
-                                <span class="small">Intership (12 weeks)</span><br />
-                                <span class="small">Design and development of a serious game (jQuery, gameQuery, Spring)</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline timeline-rightpart">
-                    </div>
-                </div>
-                <div class="timeline-wrapper">
-                    <div class="timeline timeline-leftpart">
-                    </div>
-                    <div class="timeline timeline-rightpart">
-                        <div class="middle-wrapper">
-                            <div class="top-50">
-                                <span class="big">A-Levels in Science</span><br />
-                                <span class="small">with honours</span><br />
-                                <span class="small"><i class="fa fa-university"></i> Champollion High School - Lattes, FRANCE</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="overlay overlay-bottom">
-                        <span>2008</span>
-                    </div>
+                <div class="overlay overlay-top">
+                    <span>2017</span>
                 </div>
             </div>
 
-            <div id="cv-timeline-sd" class="visible-xs">
-                <div class="row">
-                    <div class="col-xs-3">
-                        <h4>July 2012 - August 2015</h4>
-                    </div>
-                    <div class="col-xs-9">
-                        <h4>NaturalPad</h4>
-                        <span>Web and software developer and Scrum master (3 years)<br />
-                        Development of web oriented applications (jQuery, NodeJS, BackboneJS, MongoDB, ExpressJS, Android SDK)</span>
+             <div class="timeline-wrapper">
+                <div class="timeline timeline-leftpart">
+                </div>
+                <div class="timeline timeline-rightpart">
+                    <div class="middle-wrapper">
+                        <div class="top-50">
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-xs-3">
-                        <h4>July 2011 - June 2012</h4>
-                    </div>
-                    <div class="col-xs-9">
-                        <h4>LIRMM</h4>
-                        <span>Research Engineer (1 year)<br />
-                        Design of a serious game and client-server applications (Unity3D, Java)</span>
-                    </div>
+                <div class="overlay">
                 </div>
-                <div class="row">
-                    <div class="col-xs-3">
-                        <h4>September 2010 - June 2011</h4>
-                    </div>
-                    <div class="col-xs-9">
-                        <h4>Bachelor Degree in Computer Science</h4>
-                        <span><i class="fa fa-university"></i>  Montpellier Institute of Technology, FRANCE</span>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-3">
-                        <h4>March 2011 - June 2011</h4>
-                    </div>
-                    <div class="col-xs-9">
-                        <h4>LIRMM</h4>
-                        <span>Internship (16 weeks)<br />
-                        Design of a serious game and client-server applications (Unity3D, Java)</span>
-                    </div>
-                </div>
+            </div>
 
-                <div class="row">
-                    <div class="col-xs-3">
-                        <h4>September 2008 - June 2010</h4>
-                    </div>
-                    <div class="col-xs-9">
-                        <h4>H.N.D in computer Science (IT Management)</h4>
-                        <span><i class="fa fa-university"></i> Montpellier Institue of Technology, FRANCE</span>
+            <div class="timeline-wrapper">
+                <div class="timeline timeline-leftpart">
+                </div>
+                <div class="timeline timeline-rightpart">
+                    <div class="middle-wrapper">
+                        <div class="top-50">
+                            <span class="big">Natural Pad</span><br />
+                            <span class="small">Développeur web &amp; logiciel et Scrum master (4 ans)</span><br />
+                            <span class="small">Développement d'applications web et mobile (jQuery, NodeJS, BackboneJS, MongoDB, ExpressJS, Android SDK)</span>
+                        </div>
                     </div>
                 </div>
+                <div class="overlay">
+                    <span>2013</span>
+                </div>
+            </div>
 
-                <div class="row">
-                    <div class="col-xs-3">
-                        <h4>February 2010 - May 2010</h4>
-                    </div>
-                    <div class="col-xs-9">
-                        <h4>LIRMM</h4>
-                        <span>Internship (12 weeks)<br />
-                        Design and development of a serious game (jQuery, gameQuery, Spring)</span>
+            <div class="timeline-wrapper">
+                <div class="timeline timeline-leftpart">
+                    <div class="middle-wrapper">
+                        <div class="top-50">
+                            <span class="big">LIRMM</span><br />
+                            <span class="small">Ingénieur de recherche (1 an)</span><br />
+                            <span class="small">Conception d'un jeu sérieux et d'applications client/serveur (Unity3D, Java)</span>
+                        </div>
                     </div>
                 </div>
+                <div class="timeline timeline-rightpart">
+                </div>
+                <div class="overlay">
+                    <span>2011</span>
+                </div>
+            </div>
 
-                <div class="row">
-                    <div class="col-xs-3">
-                        <h4>September 2005 - June 2008</h4>
+            <div class="timeline-wrapper">
+                <div class="timeline timeline-leftpart">
+                </div>
+                <div class="timeline timeline-rightpart">
+                    <div class="middle-wrapper">
+                        <div class="top-50">
+                            <span class="big">Licence Professionnelle API-DAE E-business</span><br />
+                            <span class="small"><i class="fa fa-university"></i> IUT de Montpellier, FRANCE</span><br/>
+                        </div>
                     </div>
-                    <div class="col-xs-9">
-                        <h4>A-Levels in Science</h4>
-                        <span>with honours<br />
-                        <i class="fa fa-university"></i> Champollion High Scool - Lattes, FRANCE</span>
+                </div>
+            </div>
+            <div class="timeline-wrapper">
+                <div class="timeline timeline-leftpart">
+                    <div class="middle-wrapper">
+                        <div class="top-50">
+                            <span class="big">LIRMM</span><br />
+                            <span class="small">Stage (16 semaines)</span><br />
+                            <span class="small">Conception d'un jeu serieux et d'applications client/serveur (Unity3D, Java)</span>
+                        </div>
                     </div>
+                </div>
+                <div class="timeline timeline-rightpart">
+                </div>
+            </div>
+            <div class="timeline-wrapper">
+                <div class="timeline timeline-leftpart">
+                </div>
+                <div class="timeline timeline-rightpart">
+                    <div class="middle-wrapper">
+                        <div class="top-50">
+                            <span class="big">DUT Informatique (informatique de gestion)</span><br />
+                            <span class="small"><i class="fa fa-university"></i> IUT de Montpellier, FRANCE</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="overlay">
+                    <span>2010</span>
+                </div>
+            </div>
+            <div class="timeline-wrapper">
+                <div class="timeline timeline-leftpart">
+                    <div class="middle-wrapper">
+                        <div class="top-50">
+                            <span class="big">LIRMM</span><br />
+                            <span class="small">Stage (12 semaines)</span><br />
+                            <span class="small">Conception et développement d'un jeu sérieux (jQuery, gameQuery, Spring)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline timeline-rightpart">
+                </div>
+            </div>
+            <div class="timeline-wrapper">
+                <div class="timeline timeline-leftpart">
+                </div>
+                <div class="timeline timeline-rightpart">
+                    <div class="middle-wrapper">
+                        <div class="top-50">
+                            <span class="big">Baccalauréat Scientifique</span><br />
+                            <span class="small">avec mention</span><br />
+                            <span class="small"><i class="fa fa-university"></i> Lycée Champollion - Lattes, FRANCE</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="overlay overlay-bottom">
+                    <span>2008</span>
                 </div>
             </div>
         </div>
@@ -311,16 +235,11 @@
 
     <footer id="more">
         <div class="container">
-            <h2 class="uppercased"><span class="emphased">Additional</span> informations</h2>
+            <h2 class="uppercased inverse"><span class="emphased">Informations</span> complémentaires</h2>
             <div class="row">
                 <div class="col-sm-4 centered">
                     <a href="https://github.com/xandar" target="_blank">
                         <i class="fa fa-github"></i> <br />Github
-                    </a>
-                </div>
-                <div class="col-sm-4 centered">
-                    <a href="http://blogs.wefrag.com/xandar" target="_blank">
-                        <i class="fa fa-book"></i> <br />Blog
                     </a>
                 </div>
 				<div class="col-sm-4 centered">
@@ -328,23 +247,22 @@
                         <i class="fa fa-linkedin"></i> <br />LinkedIn
                     </a>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6 centered">
+                <div class="col-sm-4 centered">
                     <a href="https://www.flickr.com/photos/73941991@N05/" target="_blank">
                         <i class="fa fa-flickr"></i> <br />Flickr
                     </a>
                 </div>
-                <div class="col-sm-6 centered">
-                    <a href="https://www.youtube.com/channel/UC-QQ92KALiZLc9h-yz9IU4g" target="_blank">
-                        <i class="fa fa-youtube"></i> <br />Youtube
-                    </a>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12 centered">
+                    <p>Logo Rocket réalisé par <a href="http://www.flaticon.com/authors/popcorns-arts" title="Popcorns Arts">Popcorns Arts</a> de <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> sous licence <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div></p>
                 </div>
             </div>
+            
         </div>
     </footer>
-    <script src="javascripts/libs/jquery-2.1.1.js"></script>
-    <script src="javascripts/libs/bootstrap.min.js"></script>
-    <script src="javascripts/app.js"></script>
+    <script type="text/javascript" src="javascripts/libs/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="javascripts/app.js"></script>
 </body>
 </html>

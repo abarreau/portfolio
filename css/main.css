@@ -1,34 +1,10 @@
-/**********************************/
-/*           GENERAL              */
-/**********************************/
-
 body
 {
-    background: #80592f;
+    background: #2f8494;
     color: #ddd;
-    font-family: 'Lato', 'Verdana', sans-serif;
+    font-family: 'Lato';
     font-size: 1.6em;
 }
-
-
-/***********************************/
-/*          TEXT STYLES            */
-/***********************************/
-
-h1, h2, h3, h4 { color: #ddd; }
-h2 { font-weight: 300; }
-h3, h4 { font-weight: 700; }
-
-.punchline { font-size: 2em; }
-.download-pdf { font-size: 0.5em; color: #ccc; }
-
-.left-aligned { text-align: left; }
-.right-aligned { text-align: right; }
-.centered { text-align: center; }
-
-.inverse { color: #323232; }
-.uppercased { text-transform: uppercase; }
-.emphased { font-weight: 900; }
 
 a, a:visited
 {
@@ -38,92 +14,234 @@ a, a:visited
 
 a:hover, a:active
 {
-    color: #d31313;
+    color: #0391ac;
     text-decoration: none;
 }
 
-
-/**********************************/
-/*            NAVBAR              */
-/**********************************/
-
-nav
+a#download-pdf
 {
-    transition-property: height, line-height, border-bottom, background-color, color;
+	font-size: 0.5em;
+	color: #ccc;
+}
+
+h1, h2, h3, h4
+{
+    color: #333;
+}
+
+h2
+{
+    font-weight: 300;
+}
+
+h3, h4
+{
+    font-weight: 700;
+}
+
+h1.inverse, h2.inverse, h3.inverse, h4.inverse
+{
+    color: #dedede;
+}
+
+#punchline
+{
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 2px 2px 3px #bbb;
+}
+
+#navbar
+{
+    transition-property: height, line-height, border-bottom, background-color;
     transition-duration: 0.5s;
+    width: 100%;
+    border-bottom: 0;
+    height: 150px;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
     background: rgba(50, 50, 50, 0);
     background: url("../images/bg_blurry2.jpg") fixed;
     background-size: cover;
+    line-height: 150px;
 }
 
-.navbar-inverse
+#navbar ul
 {
-    background: rgba(50, 50, 50, 0);
-    border-bottom: 0;
+    float: right;
+    line-height: 150px;
+    transition-property: line-height;
+    transition-duration: 0.5s;
 }
-.navbar-inverse .navbar-nav > li > a,
-.navbar-inverse .navbar-link { color: #b21515; }
 
-.nav-reduced
+#navbar ul li
 {
-    background: rgba(50, 50, 50, 1);
-    border-bottom: 1px solid #555;
+    display: inline;
+    list-style: none;
+    margin-right: 1.5em;
 }
-.nav-reduced.navbar-inverse .navbar-nav > li > a,
-.nav-reduced.navbar-inverse .navbar-link { color: #999; }
 
+#navbar ul li:last-child
+{
+    margin-right: 0;
+}
 
-/***********************************/
-/*            SECTIONS             */
-/***********************************/
+#navbar a
+{
+	color: #ddd;
+}
 
-section { padding: 5em; }
+#navbar .nav-brand
+{
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+}
 
+#navbar.reduced
+{
+    height: 100px;
+    line-height: 100px;
+    border-bottom: 2px solid #444;
+    background: rgba(55, 55, 55, 1);
+}
 
-#abstract p { margin-top: 5em; }
-#abstract
+#navbar.reduced ul
+{
+    line-height: 100px;
+}
+
+#navbar.reduced a
+{
+    color: #ddd;
+}
+
+#navbar.reduced .nav-brand
+{
+    opacity: 1;
+}
+
+section
+{
+    padding: 5em;
+}
+
+section#abstract
 {
     padding-top: 200px;
     background: url("../images/bg_blurry2.jpg") fixed;
     background-size: cover;
 }
 
-#abstract h1
+section#abstract p
+{
+    margin-top: 2em;
+}
+
+section#abstract h1
 {
     font-weight: bold;
     font-size: 7em;
     text-align: center;
-    text-shadow: 3px 4px 0px #ddd, 9px 12px 0px #888;
+    text-shadow: 3px 4px 0px #6d6d6d, 9px 12px 10px #2b2b2b;
 }
 
-#projects
+section#abstract object
+{
+	width: 200px;
+	height: 200px;
+}
+
+section#projects
 {
     background: #ddd;
     color: #323232;
 }
 
-#more
+section#curriculum
+{
+
+}
+
+section#misc
+{
+    background: #ddd;
+}
+
+section#contact
+{
+    background: url("../images/bg_blurry_contact.jpg") fixed;
+    background-size: cover;
+}
+
+footer
 {
     background: #222;
     padding: 5em;
 }
 
-#more i { font-size: 5em !important; }
-#more ul li { list-style: none; }
-#more a, a:visited, a:hover { color: #A9871B; }
+footer ul
+{
 
-#more .row
+}
+
+footer ul li
+{
+    list-style: none;
+}
+
+footer i
+{
+    font-size: 5em !important;
+}
+
+footer .row
 {
     margin-top: 30px;
     margin-bottom: 60px;
 }
 
-#curriculum > div.container > div.row:first-of-type { margin-bottom: 50px; }
+footer a, a:visited, a:hover
+{
+    color: #0391ac;
+}
 
+.left-aligned
+{
+    text-align: left;
+}
 
-/************************************/
-/*            CURRICULUM            */
-/************************************/
+.right-aligned
+{
+    text-align: right;
+}
+
+.centered
+{
+    text-align: center;
+}
+
+.inverse
+{
+    color: #323232;
+}
+
+.uppercased
+{
+    text-transform: uppercase;
+}
+
+.emphased
+{
+    font-weight: 900;
+}
+
+section#curriculum > div.container > div.row:first-of-type
+{
+    margin-bottom: 50px;
+}
 
 .timeline-wrapper
 {
@@ -160,6 +278,11 @@ section { padding: 5em; }
     font-size: 1.3em;
 }
 
+.timeline span.small
+{
+
+}
+
 .overlay
 {
     position: absolute;
@@ -180,8 +303,15 @@ section { padding: 5em; }
     border-radius: 10px;
 }
 
-.overlay-bottom { background: url("../images/timeline-arrow-bottom.png") center bottom no-repeat; }
-.overlay-top { background: url("../images/timeline-arrow-top.png") center top no-repeat; }
+.overlay-bottom
+{
+    background: url("../images/timeline-arrow-bottom.png") center bottom no-repeat;
+}
+
+.overlay-top
+{
+    background: url("../images/timeline-arrow-top.png") center top no-repeat;
+}
 
 .timeline-leftpart
 {
@@ -201,16 +331,10 @@ section { padding: 5em; }
     padding-left: 75px;
 }
 
-
-/***********************************/
-/*         VARIOUS WORKS           */
-/***********************************/
-
-.various-work-box { padding: 2em; }
-.various-work-box .image-box { width: 10%; }
-.various-work-box.photography .text-box { padding-left: 1em; }
-.various-work-box.personnal-projects .text-box { padding-right: 1em; }
-.various-work-box h3 { margin: 0px 0px 10px 0px; }
+.various-work-box
+{
+    padding: 2em;
+}
 
 .various-work-box img
 {
@@ -218,10 +342,25 @@ section { padding: 5em; }
     background-color: #333;
 }
 
+.various-work-box .image-box
+{
+    width: 10%;
+}
+
 .various-work-box .text-box
 {
     display: table-cell;
     vertical-align: middle;
+}
+
+.various-work-box.left-aligned .text-box
+{
+    padding-left: 1em;
+}
+
+.various-work-box.right-aligned .text-box
+{
+    padding-right: 1em;
 }
 
 .various-work-box .vertical-wrapper
@@ -231,62 +370,7 @@ section { padding: 5em; }
     width: 90%;
 }
 
-.visible-md.photography { text-align: left; }
-.visible-md.personnal-projects { text-align: right; }
-
-.visible-xs.various-work-box { text-align: justify }
-.visible-xs.various-work-box h3 { text-align: center}
-.visible-xs.various-work-box .image-caption { text-align: center; margin-bottom: 1em; }
-
-
-/*************************************/
-/*  RESPONSIVE XS DEVICES (<= 768px) */
-/*************************************/
-
-@media screen and (max-width: 768px)
+.various-work-box h3
 {
-    #abstract h1 { font-size: 3em; }
-    .punchline { font-size: 1em; font-weight: bold; }
-    .download-pdf { margin-top: 1em; }
-
-    nav, .navbar-inverse { background: rgba(55, 55, 55, 1); }
-    .navbar-inverse .navbar-nav > li > a,
-    .navbar-inverse .navbar-link { color: #999; }
-
-    section { padding: 0.5em; }
-
-    #resume ul li { margin-bottom: 0.7em; }
-
-    #cv-timeline-sd .row { margin-bottom: 2em; }
-
-    #more .col-sm-6, .col-sm-4 { margin-bottom: 60px; }
-    #more .row { margin-bottom: 0; }
-}
-
-
-/*************************************/
-/*  RESPONSIVE XS DEVICES (<= 768px) */
-/*************************************/
-@media (min-width: 768px)
-{
-    .container { width: 670px; }
-    .navbar-nav { float: right; }
-}
-
-
-/*************************************/
-/*  RESPONSIVE MD DEVICES (>= 992px) */
-/*************************************/
-@media (min-width: 992px)
-{
-    .container { width: 890px }
-}
-
-
-/**************************************/
-/*  RESPONSIVE LG DEVICES (>= 1200px) */
-/**************************************/
-@media (min-width: 1200px)
-{
-    .container { width: 1100px; }
+    margin: 0px 0px 10px 0px;
 }
